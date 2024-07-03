@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{ %load static % }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{ % static 'js/scripts.js' % }"></script>
+    <link rel ="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<form action ="" method="post">
+    {% csrf_token %}
+
+    <label for="">Username:</label>
+    <input type="text" name="username" placeholder="Enter the username">
+     <label for="">First name:</label>
+    <input type="text" name="first_name" placeholder="Enter the firstname">
+     <label for="">Last name:</label>
+    <input type="text" name="last_name" placeholder="Enter the lastname">
+     <label for="">Email:</label>
+    <input type="email" name="email" placeholder="Enter the email id">
+    <label for="">Password:</label>
+    <input type="password" name="password" placeholder="Enter the password">
+    <label for="">Confirm password:</label>
+    <input type="password" name="password" placeholder="Enter the password">
+
+    <input type="submit" value="Register" onclick="showAlert()">
+</form>
+
+<script src="{ % static 'js/scripts.js' % }"></script>
+</body>
+</html>
